@@ -1,4 +1,4 @@
-import { Boxes } from 'lucide-react';
+import Boxes from '@/components/shared/icons/Boxes';
 import Link from 'next/link';
 
 const NavbarLogo = () => {

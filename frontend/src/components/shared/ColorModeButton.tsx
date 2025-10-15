@@ -1,6 +1,7 @@
 'use client';
 
-import { Moon, Sun } from 'lucide-react';
+import Moon from '@/components/shared/icons/Moon';
+import Sun from '@/components/shared/icons/Sun';
 import { useTheme } from 'next-themes';
 import { useCallback, useEffect, useState } from 'react';
 

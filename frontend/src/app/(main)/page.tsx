@@ -1,13 +1,17 @@
-import About from '@/components/common/home/About';
+import Faq from '@/components/common/home/Faq';
+import Features from '@/components/common/home/Features';
 import Hero from '@/components/common/home/Hero';
-import Step from '@/components/common/home/Step';
+import Pricing from '@/components/common/home/Pricing';
+import Testimonials from '@/components/common/home/Testimonials';
 
 const Page = () => {
     return (
         <>
             <Hero />
-            <About />
-            <Step />
+            <Features />
+            <Pricing />
+            <Faq />
+            <Testimonials />
         </>
     );
 };

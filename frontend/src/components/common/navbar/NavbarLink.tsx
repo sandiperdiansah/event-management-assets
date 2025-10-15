@@ -9,20 +9,20 @@ import { useShallow } from 'zustand/shallow';
 
 const NAVIGATIONS = [
     {
-        href: '',
-        label: 'About',
+        href: '#features',
+        label: 'Features',
     },
     {
-        href: '',
-        label: 'Services',
-    },
-    {
-        href: '',
+        href: '#pricing',
         label: 'Pricing',
     },
     {
-        href: '',
-        label: 'Contact',
+        href: '#faq',
+        label: 'FAQ',
+    },
+    {
+        href: '#testimonials',
+        label: 'Testimonials',
     },
 ];
 
@@ -34,7 +34,7 @@ const NavbarLink = () => {
     return (
         <nav
             className={clsx(
-                'absolute top-full right-0 left-0 z-50 inline-flex w-full flex-col items-center justify-center gap-6 bg-white p-6 transition-all duration-300 md:static md:h-auto md:translate-y-0 md:flex-row md:gap-8 md:p-0 lg:w-auto lg:bg-transparent dark:bg-gray-800 md:dark:bg-transparent',
+                'absolute top-full right-0 left-0 z-50 inline-flex w-full flex-col items-center justify-center gap-6 bg-white p-6 transition-all duration-300 md:static md:h-auto md:translate-y-0 md:flex-row md:gap-8 md:bg-transparent md:p-0 lg:w-auto dark:bg-gray-900 md:dark:bg-transparent',
                 !isOpenNavigation ? '-translate-y-[200%]' : 'translate-y-0',
             )}
         >

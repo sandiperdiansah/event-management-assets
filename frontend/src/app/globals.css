@@ -13,7 +13,7 @@
 
 /* button */
 @utility btn {
-    @apply inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-sm px-6 py-2.5 text-sm font-medium transition hover:scale-105 hover:shadow-sm;
+    @apply inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-sm px-6 py-2.5 text-sm font-medium transition hover:scale-105 hover:shadow-xl;
 }
 
 @utility btn-primary {
@@ -21,7 +21,7 @@
 }
 
 @utility btn-outline {
-    @apply text-black ring-1 ring-blue-600 hover:bg-blue-700 hover:text-white dark:text-white;
+    @apply text-black ring-1 ring-blue-600 hover:bg-blue-600 hover:text-white dark:text-white;
 }
 
 /* background */
@@ -70,5 +70,5 @@
 
 /* text */
 @utility text-theme {
-    @apply text-gray-600 transition-colors dark:text-gray-400;
+    @apply text-gray-500 transition-colors dark:text-gray-400;
 }

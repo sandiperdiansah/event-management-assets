@@ -1,7 +1,8 @@
 'use client';
 
+import TextAlignJustify from '@/components/shared/icons/TextAlignJustify';
+import X from '@/components/shared/icons/X';
 import { useAppStore } from '@/hooks/useAppStore';
-import { TextAlignJustify, X } from 'lucide-react';
 import { useShallow } from 'zustand/shallow';
 
 const NavbarToggleButton = () => {

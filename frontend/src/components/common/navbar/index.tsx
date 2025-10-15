@@ -3,7 +3,6 @@ import NavbarLogo from '@/components/common/navbar/NavbarLogo';
 import NavbarToggleButton from '@/components/common/navbar/NavbarToggleButton';
 import NavbarUser from '@/components/common/navbar/NavbarUser';
 import ColorModeButton from '@/components/shared/ColorModeButton';
-import { memo } from 'react';
 
 const Navbar = () => {
     return (
@@ -12,7 +11,7 @@ const Navbar = () => {
 
             <div className="inline-flex items-center md:space-x-8">
                 <NavbarLink />
-                <div className="absolute top-1/2 right-14 md:flex items-center justify-center -translate-y-1/2 md:static md:translate-y-0">
+                <div className="absolute top-1/2 right-12 -translate-y-1/2 items-center justify-center md:static md:flex md:translate-y-0">
                     <ColorModeButton />
                 </div>
                 <NavbarUser className="hidden lg:block" />
@@ -25,4 +24,4 @@ const Navbar = () => {
     );
 };
 
-export default memo(Navbar);
+export default Navbar;
