@@ -1,7 +1,7 @@
 import { IconProps } from '@/components/shared/icons/types';
 import clsx from 'clsx';
 
-const ChevronUp = ({ className, strokeWidth = 2, ...props }: IconProps) => {
+const FileText = ({ className, strokeWidth = 2, ...props }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -15,9 +15,13 @@ const ChevronUp = ({ className, strokeWidth = 2, ...props }: IconProps) => {
             aria-hidden="true"
             {...props}
         >
-            <path d="m18 15-6-6-6 6" />
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
         </svg>
     );
 };
 
-export default ChevronUp;
+export default FileText;

@@ -11,7 +11,7 @@ const ChevronDown = ({ className, strokeWidth = 2, ...props }: IconProps) => {
             strokeWidth={strokeWidth}
             strokeLinecap="round"
             strokeLinejoin="round"
-            className={clsx('size-5', className)}
+            className={clsx('size-6', className)}
             aria-hidden="true"
             {...props}
         >

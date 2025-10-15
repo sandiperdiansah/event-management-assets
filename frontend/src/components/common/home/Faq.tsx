@@ -1,5 +1,3 @@
-import { Accordion } from '@/components/shared/Accordion';
-
 const Faq = () => {
     return (
         <section
@@ -8,12 +6,12 @@ const Faq = () => {
         >
             <hgroup>
                 <h3 className="text-xl font-medium text-blue-500">FAQ</h3>
-                <h4 className="text-4xl leading-tight font-bold">
-                    Lorem ipsum dolor sit amet.
+                <h4 className="text-4xl leading-tight font-bold max-w-2xl">
+                    Frequently Asked Questions
                 </h4>
                 <p className="text-theme mt-4 max-w-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente
-                    excepturi dicta iure temporibus expedita.
+                    Find answers to frequently asked questions about managing our event
+                    assets.
                 </p>
             </hgroup>
 
