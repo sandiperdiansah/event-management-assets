@@ -37,7 +37,7 @@ const FormSignup = () => {
                 type="submit"
                 className="btn btn-primary"
             >
-                Sign in
+                Sign up
             </button>
 
             <span className="inline-block w-full text-center text-sm">
