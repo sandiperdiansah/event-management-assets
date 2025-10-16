@@ -12,6 +12,7 @@ const NavbarToggleButton = () => {
 
     return (
         <button
+            type="button"
             className="cursor-pointer transition"
             aria-label="toggle navigation"
             onClick={togleNavigation}

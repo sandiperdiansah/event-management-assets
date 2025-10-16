@@ -1,7 +1,11 @@
-import ThemeProvider from '@/providers/ThemeProvider';
 import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import './globals.css';
+
+const ThemeProvider = dynamic(() => import('@/providers/ThemeProvider'));
+const TopLoader = dynamic(() => import('@/components/shared/TopLoader'));
+const Backdrop = dynamic(() => import('@/components/shared/Backdrop'));
 
 const inter = Inter({
     variable: '--font-inter',
@@ -21,7 +25,16 @@ const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
             suppressHydrationWarning
         >
             <body className={`${inter.className} antialiased`}>
-                <ThemeProvider>{children}</ThemeProvider>
+                <ThemeProvider>
+                    <TopLoader />
+                    <main
+                        className="min-h-screen"
+                        aria-label="main content"
+                    >
+                        {children}
+                    </main>
+                    <Backdrop />
+                </ThemeProvider>
             </body>
         </html>
     );

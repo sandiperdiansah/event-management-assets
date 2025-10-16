@@ -13,7 +13,7 @@
 
 /* button */
 @utility btn {
-    @apply inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-sm px-6 py-2.5 text-sm font-medium transition hover:scale-105 hover:shadow-xl;
+    @apply inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-medium transition hover:scale-105 hover:shadow-xl;
 }
 
 @utility btn-primary {
@@ -22,6 +22,27 @@
 
 @utility btn-outline {
     @apply text-black ring-1 ring-blue-600 hover:bg-blue-600 hover:text-white dark:text-white;
+}
+
+/* input */
+@utility input {
+    @apply w-full rounded-md px-4 py-3 ring-1 transition-colors;
+}
+
+@utility input-primary {
+    @apply transition-colors;
+
+    @variant not-dark {
+        @apply ring-gray-300;
+    }
+
+    @variant dark {
+        @apply ring-gray-700;
+    }
+}
+
+@utility input-error {
+    @apply ring-red-500 focus:ring-red-600;
 }
 
 /* background */

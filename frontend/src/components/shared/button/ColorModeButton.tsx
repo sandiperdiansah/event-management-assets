@@ -21,11 +21,12 @@ const ColorModeButton = () => {
 
     return (
         <button
+            type="button"
             className="cursor-pointer transition-transform hover:scale-105"
             aria-label="toggle theme"
             onClick={toggleTheme}
         >
-            {theme === 'dark' ? <Sun /> : <Moon />}
+            {theme === 'light' ? <Sun className="text-yellow-500" /> : <Moon />}
         </button>
     );
 };

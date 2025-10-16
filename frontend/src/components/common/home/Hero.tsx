@@ -1,3 +1,4 @@
+import Dot from '@/components/shared/Dot';
 import For from '@/components/shared/For';
 import AudioLines from '@/components/shared/icons/AudioLines';
 import Image from 'next/image';
@@ -6,13 +7,13 @@ import Link from 'next/link';
 const Hero = () => {
     return (
         <section
-            className="r-px grid min-h-screen w-full grid-cols-1 gap-8 pt-8 md:gap-0 md:pt-0 lg:grid-cols-[1fr_36%] lg:gap-8"
+            className="r-px grid min-h-screen w-full grid-cols-1 gap-8 pt-8 md:gap-0 md:pt-0 lg:-mt-10 lg:grid-cols-[1fr_36%] lg:gap-8"
             role="banner"
         >
             <div className="flex flex-col items-start justify-center gap-6">
                 <hgroup className="space-y-4">
-                    <h2 className="text-5xl leading-tight font-bold max-w-2xl">
-                        Manage Your Event Assets Easily and Efficiently.
+                    <h2 className="max-w-2xl text-5xl leading-tight font-bold">
+                        Manage Your Event Assets Easily and Efficiently
                     </h2>
 
                     <p className="text-theme max-w-xl">
@@ -75,17 +76,10 @@ const Hero = () => {
                 </div>
 
                 <div
-                    className="absolute -bottom-6 left-0 -z-10 flex w-24 flex-wrap items-center justify-center gap-4 md:bottom-6 lg:bottom-0 lg:-left-10"
+                    className="absolute -bottom-6 left-0 -z-10 flex w-24 flex-wrap items-center justify-center gap-4 md:bottom-6 lg:bottom-0 lg:-left-10 xl:-bottom-14"
                     aria-hidden="true"
                 >
-                    <For each={[...Array(25)]}>
-                        {() => (
-                            <span
-                                className="block size-1 animate-bounce rounded-full bg-blue-600"
-                                aria-hidden="true"
-                            ></span>
-                        )}
-                    </For>
+                    <Dot count={25} />
                 </div>
             </div>
         </section>

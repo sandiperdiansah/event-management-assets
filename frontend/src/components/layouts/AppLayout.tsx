@@ -1,14 +1,12 @@
-import Navbar from '@/components/common/navbar';
-import Backdrop from '@/components/shared/Backdrop';
-import TopLoader from '@/components/shared/TopLoader';
+import dynamic from 'next/dynamic';
+
+const Navbar = dynamic(() => import('@/components/common/navbar'));
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
-            <TopLoader />
             <Navbar />
-            <main className="min-h-screen">{children}</main>
-            <Backdrop />
+            {children}
         </>
     );
 };

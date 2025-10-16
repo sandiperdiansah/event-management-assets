@@ -2,7 +2,7 @@ import NavbarLink from '@/components/common/navbar/NavbarLink';
 import NavbarLogo from '@/components/common/navbar/NavbarLogo';
 import NavbarToggleButton from '@/components/common/navbar/NavbarToggleButton';
 import NavbarUser from '@/components/common/navbar/NavbarUser';
-import ColorModeButton from '@/components/shared/ColorModeButton';
+import ColorModeButton from '@/components/shared/button/ColorModeButton';
 
 const Navbar = () => {
     return (
@@ -11,7 +11,7 @@ const Navbar = () => {
 
             <div className="inline-flex items-center md:space-x-8">
                 <NavbarLink />
-                <div className="absolute top-1/2 right-12 -translate-y-1/2 items-center justify-center md:static md:flex md:translate-y-0">
+                <div className="absolute top-1/2 right-14 -translate-y-1/2 items-center justify-center md:static md:flex md:translate-y-0">
                     <ColorModeButton />
                 </div>
                 <NavbarUser className="hidden lg:block" />

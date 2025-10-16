@@ -1,8 +1,8 @@
+import FormSignin from "@/components/features/auth/FormSignin";
+
 const Page = () => {
     return (
-        <div>
-            <div>page</div>
-        </div>
+        <FormSignin/>
     );
 };
 

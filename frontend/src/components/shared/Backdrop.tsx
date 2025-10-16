@@ -10,6 +10,10 @@ const Backdrop = ({ ...props }: BackdropProps) => {
         useShallow((state) => [state.isOpenBackdrop, state.closeBackdrop]),
     );
 
+    if (!isOpenBackdrop) {
+        return null;
+    }
+
     return (
         <div
             className={clsx(

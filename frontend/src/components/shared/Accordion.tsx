@@ -55,10 +55,12 @@ const AccordionDescription = ({ children, ...props }: AccordionDescriptionProps)
     );
 };
 
-export const Accordion = {
+const Accordion = {
     Root: AccordionRoot,
     Item: AccordionItem,
     Trigger: AccordionTrigger,
     Label: AccordionLabel,
     Description: AccordionDescription,
 };
+
+export default Accordion;

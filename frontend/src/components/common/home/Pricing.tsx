@@ -1,4 +1,6 @@
+import Dot from '@/components/shared/Dot';
 import For from '@/components/shared/For';
+import Hgroup from '@/components/shared/Hgroup';
 import { PRICINGS } from '@/lib/data';
 import Link from 'next/link';
 
@@ -8,17 +10,13 @@ const Pricing = () => {
             className="r-px r-py space-y-8"
             id="pricing"
         >
-            <hgroup>
-                <h3 className="text-xl font-medium text-blue-500">Pricing</h3>
-                <h4 className="max-w-2xl text-4xl leading-tight font-bold">
-                    Flexible Plans for Every Event Size
-                </h4>
-                <p className="text-theme mt-4 max-w-xl">
-                    Whether you&apos;re running a small gathering or a large-scale event,
+            <Hgroup
+                label="Pricing"
+                title="Flexible Plans for Every Event Size"
+                description="Whether you're running a small gathering or a large-scale event,
                     we offer the right plan to help you manage assets efficiently and
-                    cost-effectively.
-                </p>
-            </hgroup>
+                    cost-effectively."
+            />
 
             <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <For each={PRICINGS}>
@@ -28,14 +26,7 @@ const Pricing = () => {
                                 className="absolute top-4 right-4 z-10 flex w-10 flex-wrap items-center gap-2"
                                 aria-hidden="true"
                             >
-                                <For each={[...Array(28)]}>
-                                    {() => (
-                                        <span
-                                            className="block size-1 rounded-full bg-blue-600"
-                                            aria-hidden="true"
-                                        ></span>
-                                    )}
-                                </For>
+                                <Dot count={28} />
                             </div>
                             <div className="absolute top-8 -right-2 h-20 w-20 rotate-y-12 rounded-tl-full bg-gradient-to-b from-blue-100 transition-colors dark:from-gray-700"></div>
 
