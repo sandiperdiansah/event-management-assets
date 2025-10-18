@@ -2,7 +2,7 @@ import For from '@/components/shared/For';
 import { DotProps } from '@/components/shared/types';
 import clsx from 'clsx';
 
-const Dot = ({ count, className, ...props }: DotProps) => {
+const Dot = ({ count = 8, className, ...props }: DotProps) => {
     return (
         <For each={[...Array(count)]}>
             {() => (

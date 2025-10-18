@@ -35,12 +35,12 @@ const Pricing = () => {
                                 <span className="block font-medium text-blue-600">
                                     {data.level}
                                 </span>
-                                <h4 className="text-5xl font-bold">
+                                <h3 className="text-5xl font-bold">
                                     {data.price}
                                     <span className="text-theme ms-1 inline-block text-base">
                                         /year
                                     </span>
-                                </h4>
+                                </h3>
                                 <p className="text-theme">{data.description}</p>
                             </hgroup>
 

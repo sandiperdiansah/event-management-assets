@@ -15,7 +15,7 @@ const Footer = () => {
                         className="size-16 text-blue-600"
                         strokeWidth={1}
                     />
-                    <h6 className="text-4xl font-bold">Ema.</h6>
+                    <h4 className="text-4xl font-bold">Ema.</h4>
                 </Link>
                 <p className="text-gray-400">
                     sfsd ffsdf dsf ds f dsf ds f dsf dsfdks f shhfsdfhshfh sh fsh fkshfkks
