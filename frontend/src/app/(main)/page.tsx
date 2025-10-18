@@ -1,8 +1,10 @@
-import Faq from '@/components/common/home/Faq';
-import Features from '@/components/common/home/Features';
+import dynamic from 'next/dynamic';
 import Hero from '@/components/common/home/Hero';
-import Pricing from '@/components/common/home/Pricing';
-import Testimonials from '@/components/common/home/Testimonials';
+
+const Features = dynamic(() => import('@/components/common/home/Features'));
+const Pricing = dynamic(() => import('@/components/common/home/Pricing'));
+const Faq = dynamic(() => import('@/components/common/home/Faq'));
+const Testimonials = dynamic(() => import('@/components/common/home/Testimonials'));
 
 const Page = () => {
     return (
