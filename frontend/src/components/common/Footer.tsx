@@ -5,7 +5,7 @@ import Boxes from '@/components/shared/icons/Boxes';
 
 const Footer = () => {
     return (
-        <footer className="r-px r-py grid grid-cols-1 gap-6 bg-gray-900 text-white md:grid-cols-2 lg:grid-cols-3">
+        <footer className="r-px r-py grid grid-cols-1 gap-10 bg-gray-900 text-white md:grid-cols-2 lg:grid-cols-3">
             <hgroup className="space-y-6">
                 <Link
                     href="/"
@@ -23,7 +23,7 @@ const Footer = () => {
             </hgroup>
 
             <div className="space-y-6">
-                <h6 className="text-xl font-medium">Quick Links</h6>
+                <h4 className="text-xl font-medium">Quick Links</h4>
                 <nav className="flex flex-col gap-3 text-gray-400">
                     <For each={NAVIGATIONS}>
                         {(nav) => (

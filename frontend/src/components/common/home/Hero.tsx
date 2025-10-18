@@ -67,7 +67,7 @@ const Hero = () => {
                         src="/hero.webp"
                         alt="banner"
                         fill
-                        sizes="500px"
+                        sizes="(max-width: 1024px) 100vw, 36vw"
                         className="object-cover object-center"
                         priority
                     />
