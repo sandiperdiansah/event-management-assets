@@ -7,6 +7,7 @@ class AppRoute
     constructor(app: Application)
     {
         this.app = app;
+        this.init();
     }
 
     public init()

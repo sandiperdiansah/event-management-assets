@@ -27,12 +27,8 @@ const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
             <body className={`${inter.className} antialiased`}>
                 <ThemeProvider>
                     <TopLoader />
-                    <main
-                        className="min-h-screen"
-                        aria-label="main content"
-                    >
-                        {children}
-                    </main>
+                   
+                    {children}
                     <Backdrop />
                 </ThemeProvider>
             </body>

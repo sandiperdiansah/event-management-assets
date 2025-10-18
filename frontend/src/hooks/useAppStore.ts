@@ -4,7 +4,7 @@ type AppState = {
     isOpenNavigation: boolean;
     isOpenBackdrop: boolean;
     closeNavigation: () => void;
-    togleNavigation: () => void;
+    toggleNavigation: () => void;
     closeBackdrop: () => void;
 };
 
@@ -12,7 +12,7 @@ export const useAppStore = create<AppState>((set) => ({
     isOpenNavigation: false,
     isOpenBackdrop: false,
 
-    togleNavigation: () =>
+    toggleNavigation: () =>
         set((state) => ({
             ...state,
             isOpenNavigation: !state.isOpenNavigation,

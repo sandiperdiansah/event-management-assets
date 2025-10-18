@@ -4,6 +4,25 @@ import FileText from '@/components/shared/icons/FileText';
 import Mail from '@/components/shared/icons/Mail';
 import ScanLine from '@/components/shared/icons/ScanLine';
 
+export const NAVIGATIONS = [
+    {
+        href: '#features',
+        label: 'Features',
+    },
+    {
+        href: '#pricing',
+        label: 'Pricing',
+    },
+    {
+        href: '#faq',
+        label: 'FAQ',
+    },
+    {
+        href: '#testimonials',
+        label: 'Testimonials',
+    },
+];
+
 export const PRICINGS = [
     {
         level: 'Basic',
@@ -76,5 +95,40 @@ export const FEATURES = [
         title: 'Detailed Reporting & Analytics',
         description:
             'Generate comprehensive reports in PDF or Excel to analyze asset utilization and rental history.',
+    },
+];
+
+export const FAQS = [
+    {
+        question: 'Lorem ipsum dolor sit amet?',
+        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+        question: 'Ut enim ad minim veniam?',
+        answer: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    },
+    {
+        question: 'Duis aute irure dolor in reprehenderit?',
+        answer: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    },
+    {
+        question: 'Excepteur sint occaecat cupidatat non proident?',
+        answer: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    },
+    {
+        question: 'Quis autem vel eum iure reprehenderit?',
+        answer: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.',
+    },
+    {
+        question: 'Neque porro quisquam est qui dolorem ipsum?',
+        answer: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.',
+    },
+    {
+        question: 'Sed ut perspiciatis unde omnis iste natus error?',
+        answer: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+    },
+    {
+        question: 'At vero eos et accusamus et iusto odio dignissimos?',
+        answer: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.',
     },
 ];

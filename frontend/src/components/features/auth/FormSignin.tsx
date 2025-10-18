@@ -26,15 +26,20 @@ const FormSignin = () => {
                 </Link>
             </div>
 
-            <button type="submit" className="btn btn-primary">Sign in</button>
+            <button
+                type="submit"
+                className="btn btn-primary"
+            >
+                Sign in
+            </button>
 
             <span className="inline-block w-full text-center text-sm">
-                Don&apos;t have an account?{" "}
+                Don&apos;t have an account?{' '}
                 <Link
                     href="/auth/signup"
                     className="text-sm text-blue-600 hover:underline"
                 >
-                   Sign up
+                    Sign up
                 </Link>
             </span>
         </form>

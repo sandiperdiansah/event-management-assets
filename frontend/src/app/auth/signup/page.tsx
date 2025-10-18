@@ -1,9 +1,7 @@
-import FormSignup from "@/components/features/auth/FormSignup";
+import FormSignup from '@/components/features/auth/FormSignup';
 
 const Page = () => {
-    return (
-        <FormSignup/>
-    );
+    return <FormSignup />;
 };
 
 export default Page;

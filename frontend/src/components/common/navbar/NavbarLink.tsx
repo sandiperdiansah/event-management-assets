@@ -6,25 +6,7 @@ import { useAppStore } from '@/hooks/useAppStore';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useShallow } from 'zustand/shallow';
-
-const NAVIGATIONS = [
-    {
-        href: '#features',
-        label: 'Features',
-    },
-    {
-        href: '#pricing',
-        label: 'Pricing',
-    },
-    {
-        href: '#faq',
-        label: 'FAQ',
-    },
-    {
-        href: '#testimonials',
-        label: 'Testimonials',
-    },
-];
+import { NAVIGATIONS } from '@/lib/data';
 
 const NavbarLink = () => {
     const [isOpenNavigation, closeNavigation] = useAppStore(
@@ -38,19 +20,17 @@ const NavbarLink = () => {
                 !isOpenNavigation ? '-translate-y-[200%]' : 'translate-y-0',
             )}
         >
-            {
-                <For each={NAVIGATIONS}>
-                    {(nav) => (
-                        <Link
-                            href={nav.href}
-                            className="transition-transform hover:scale-105"
-                            onClick={closeNavigation}
-                        >
-                            {nav.label}
-                        </Link>
-                    )}
-                </For>
-            }
+            <For each={NAVIGATIONS}>
+                {(nav) => (
+                    <Link
+                        href={nav.href}
+                        className="transition-transform hover:scale-105"
+                        onClick={closeNavigation}
+                    >
+                        {nav.label}
+                    </Link>
+                )}
+            </For>
 
             <NavbarUser className="w-2/3 md:hidden" />
         </nav>

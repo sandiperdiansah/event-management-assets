@@ -5,6 +5,7 @@ import compression from "compression";
 import cookieParser from "cookie-parser";
 
 import CorsMiddleware from "@/middlewares/cors.middleware";
+import ErrorMiddleware from "@/middlewares/error.middleware";
 import AppRoute from "@/routes/app.route";
 
 class App
@@ -31,6 +32,10 @@ class App
 
         // routes
         this.route.init();
+
+        // error handler
+        this.app.use(ErrorMiddleware.globalError);
+        this.app.use(ErrorMiddleware.notFound);
     }
 
     public listen(port: number = Number(process.env.PORT) || 8000)

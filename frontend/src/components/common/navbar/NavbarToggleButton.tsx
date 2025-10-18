@@ -6,8 +6,8 @@ import { useAppStore } from '@/hooks/useAppStore';
 import { useShallow } from 'zustand/shallow';
 
 const NavbarToggleButton = () => {
-    const [isOpenNavigation, togleNavigation] = useAppStore(
-        useShallow((state) => [state.isOpenNavigation, state.togleNavigation]),
+    const [isOpenNavigation, toggleNavigation] = useAppStore(
+        useShallow((state) => [state.isOpenNavigation, state.toggleNavigation]),
     );
 
     return (
@@ -15,7 +15,7 @@ const NavbarToggleButton = () => {
             type="button"
             className="cursor-pointer transition"
             aria-label="toggle navigation"
-            onClick={togleNavigation}
+            onClick={toggleNavigation}
         >
             {!isOpenNavigation ? <TextAlignJustify /> : <X />}
         </button>

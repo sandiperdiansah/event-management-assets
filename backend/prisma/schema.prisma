@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// user
+enum UserRole {
+  USER
+  ADMIN
+}
+
+model User {
+  id       String   @id @default(cuid())
+  name     String
+  email    String   @unique
+  password String
+  image    String?
+  phone    String?
+  role     UserRole @default(USER)
+
+  sessions Session[]
+  otps     Otp[]
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+}
+
+model Session {
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  user      User     @relation(references: [id], fields: [userId], onDelete: Cascade)
+}
+
+// otp
+enum OtpType {
+  LOGIN
+  REGISTER
+  RESET_PASSWORD
+}
+
+model Otp {
+  id        String   @id @default(uuid())
+  userId    String?
+  target    String
+  otpCode   String
+  type      OtpType
+  isUsed    Boolean  @default(false)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

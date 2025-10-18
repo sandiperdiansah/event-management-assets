@@ -6,15 +6,12 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <section
-            className="r-px grid min-h-screen w-full grid-cols-1 gap-8 pt-8 md:gap-0 md:pt-0 lg:-mt-10 lg:grid-cols-[1fr_36%] lg:gap-8"
-            role="banner"
-        >
+        <section className="r-px grid min-h-screen w-full grid-cols-1 gap-8 pt-8 md:gap-0 lg:-mt-10 lg:grid-cols-[1fr_36%] lg:gap-8 lg:pt-0">
             <div className="flex flex-col items-start justify-center gap-6">
                 <hgroup className="space-y-4">
-                    <h2 className="max-w-2xl text-5xl leading-tight font-bold">
+                    <h1 className="max-w-2xl text-5xl leading-tight font-bold">
                         Manage Your Event Assets Easily and Efficiently
-                    </h2>
+                    </h1>
 
                     <p className="text-theme max-w-xl">
                         An integrated platform to manage inventory, tracking, and event
@@ -72,6 +69,7 @@ const Hero = () => {
                         fill
                         sizes="100%"
                         className="object-cover object-center"
+                        loading="lazy"
                     />
                 </div>
 

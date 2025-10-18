@@ -1,8 +1,8 @@
+import Link from 'next/link';
 import Dot from '@/components/shared/Dot';
 import For from '@/components/shared/For';
 import Hgroup from '@/components/shared/Hgroup';
 import { PRICINGS } from '@/lib/data';
-import Link from 'next/link';
 
 const Pricing = () => {
     return (
@@ -18,7 +18,7 @@ const Pricing = () => {
                     cost-effectively."
             />
 
-            <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3">
                 <For each={PRICINGS}>
                     {(data) => (
                         <li className="relative flex flex-col space-y-6 overflow-hidden rounded-xl bg-white p-6 shadow-sm transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
@@ -35,12 +35,12 @@ const Pricing = () => {
                                 <span className="block font-medium text-blue-600">
                                     {data.level}
                                 </span>
-                                <h6 className="text-5xl font-bold">
+                                <h4 className="text-5xl font-bold">
                                     {data.price}
                                     <span className="text-theme ms-1 inline-block text-base">
                                         /year
                                     </span>
-                                </h6>
+                                </h4>
                                 <p className="text-theme">{data.description}</p>
                             </hgroup>
 

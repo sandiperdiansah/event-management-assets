@@ -16,12 +16,6 @@ export type ForProps<T> = {
 
 export type BackdropProps = React.HTMLAttributes<HTMLDivElement>;
 
-// accordion
-export type AccordionProps = React.HTMLAttributes<HTMLUListElement>;
-export type AccordionItemProps = React.HTMLAttributes<HTMLLIElement>;
-export type AccordionLabelProps = React.HTMLAttributes<HTMLDivElement>;
-export type AccordionDescriptionProps = React.HTMLAttributes<HTMLDivElement>;
-
 // input
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
     invalid?: boolean;

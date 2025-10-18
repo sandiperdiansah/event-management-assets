@@ -2,8 +2,8 @@
 
 import { BackdropProps } from '@/components/shared/types';
 import { useAppStore } from '@/hooks/useAppStore';
-import clsx from 'clsx';
 import { useShallow } from 'zustand/shallow';
+import clsx from 'clsx';
 
 const Backdrop = ({ ...props }: BackdropProps) => {
     const [isOpenBackdrop, closeBackdrop] = useAppStore(

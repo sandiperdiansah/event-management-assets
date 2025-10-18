@@ -7,10 +7,7 @@ const Dot = ({ count, className, ...props }: DotProps) => {
         <For each={[...Array(count)]}>
             {() => (
                 <span
-                    className={clsx(
-                        'block size-1  rounded-full bg-blue-600',
-                        className,
-                    )}
+                    className={clsx('block size-1 rounded-full bg-blue-600', className)}
                     aria-hidden="true"
                     {...props}
                 ></span>

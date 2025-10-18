@@ -16,7 +16,7 @@ const Features = () => {
                     user-friendly system."
             />
 
-            <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3">
                 <For each={FEATURES}>
                     {(data) => {
                         const Icon = data.icon;
@@ -25,9 +25,9 @@ const Features = () => {
                             <li className="space-y-6 rounded-xl bg-white p-6 shadow-sm transition hover:scale-105 hover:shadow-xl dark:bg-gray-800">
                                 <Icon className="size-12 text-blue-600" />
                                 <hgroup className="space-y-6">
-                                    <h5 className="text-2xl leading-tight font-semibold">
+                                    <h4 className="text-2xl leading-tight font-semibold">
                                         {data.title}
-                                    </h5>
+                                    </h4>
                                     <p className="text-theme">{data.description}</p>
                                 </hgroup>
                             </li>

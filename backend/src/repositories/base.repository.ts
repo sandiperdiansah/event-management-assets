@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import db from "@/config/db";
 
-abstract class BaseRepository<TModel, TCreate, TUpdate, Twhere>
+abstract class BaseRepository<TModel, TCreate, TUpdate, TWhere>
 {
     protected db: PrismaClient;
     // protected model:Prisma.ModelNam
